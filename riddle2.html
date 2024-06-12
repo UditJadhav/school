@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riddle 2</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #e0ffff; /* Light Cyan */
+            text-align: center;
+        }
+        .container {
+            background: rgba(255, 255, 255, 0.9); /* Translucent white */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin: auto;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 50%; /* Optional: Round image corners */
+            margin-bottom: 20px;
+        }
+        input, button {
+            margin-top: 10px;
+            padding: 10px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Riddle 2</h1>
+        <img src="🌧.jpg" alt="🕕+🌧"> <!-- Replace with your image -->
+        <p>Who is this famous person?</p>
+        <input type="text" id="answer" placeholder="Your answer here">
+        <button onclick="checkAnswer()">Submit</button>
+    </div>
+
+    <script>
+        function checkAnswer() {
+            var answer = document.getElementById('answer').value.toLowerCase();
+            if (answer === 'samay raina') {
+                alert('Correct! Proceeding to the next page.');
+                window.location.href = 'riddle3.html';
+            } else {
+                alert('Incorrect answer. Try again!');
+            }
+        }
+    </script>
+</body>
+</html>
